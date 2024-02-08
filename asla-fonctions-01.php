@@ -43,18 +43,10 @@
 	
 	// Exercice 5
 	function calculerPrixPromo( $produit ){
-	list( $code , $nom , $prixUnit , $promo ) = explode( ":" , $produit ) ;
-				
-		if( $promo == 0 ){
-			list( $code , $nom , $prixUnit , $promo ) = explode( ":" , $produit ) ;
+		list( $code , $nom , $prixUnit , $promo ) = explode( ":" , $produit ) ;
 		return $promo ;		
-		}
-		else {
-				list( $code , $nom , $prixUnit , $promo ) = explode( ":" , $produit ) ;
-		return $nom ;		
-		}
 		
-	}
+}
 	
 	// Exercice 6
 	function genererListeHTML( $produit , $nomFichier = "" ){
@@ -178,8 +170,8 @@ FIN_HTML;
 		echo "Code HTML généré :\n$codeHTML\n" ;
 		
 		echo "\n6.b) -------------------------------------\n" ;
-		#$codeHTML = genererListeHTML( $produitTest2 , "vueProduitListe" ) ;
-		#echo "Code HTML généré :\n$codeHTML\n" ;
+		$codeHTML = genererListeHTML( $produitTest2 , "vueProduitListe" ) ;
+		echo "Code HTML généré :\n$codeHTML\n" ;
 		
 		// Exercice 7
 		echo "\n7.a) -------------------------------------\n" ;
